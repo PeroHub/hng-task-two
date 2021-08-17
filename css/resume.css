@@ -160,11 +160,26 @@ main {
         padding-top: 30px;
     }
 
-    
+    .volunteer ul {
+        padding-left: 15px;
+    }
+
+    .profession ul {
+        margin-left: 5px;
+    }
 
     header .hng {
         width: 50px;
         height: 50px;
+    }
+
+    .certification {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box {
+        margin-top: 20px;
     }
 
     header .ingressive {
