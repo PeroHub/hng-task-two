@@ -150,13 +150,17 @@ main {
 @media screen and (max-width: 768px) {
     main {
         width: 100%;
+        padding: 0;
         height: 220vh;
+        overflow-x: hidden;
     }
 
     header {
         text-align: center;
         padding-top: 30px;
     }
+
+    
 
     header .hng {
         width: 50px;
