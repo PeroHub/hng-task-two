@@ -126,6 +126,7 @@ body {
 
 .main-sec .project a {
     text-decoration: none;
+    
 }
 .main-sec .project p {
     color: #F2994A;
@@ -139,6 +140,22 @@ body {
 @media screen and (max-width: 800px) {
     .navigate {
         padding: 0;
+        width: 100%;
+    }
+    
+    .main-sec .project p {
+        width: 50%;
+    }
+    .main-sec .project a {
+        margin: 0 50px;
+        font-size: 1em;
+        
+    }
+
+    
+
+    .main-sec .project {
+        
         width: 100%;
     }
 
