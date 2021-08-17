@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    height: 100vh;
+    width: 100vw;
+    
+}
+
+.navigate {
+    min-height: 180px;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 300px;
+}
+
+.navigate p:first-child{
+    font-size: 2.2em;
+    font-weight: bold;
+}
+
+.navigate p:last-child{
+    padding: 25px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    background: #fff;
+    color: #000;
+    cursor: pointer;
+}
+
+
+
+.main-sec {
+    min-height: 79vh;
+    /* border: 1px solid red; */
+    padding: 30px 120px;
+    display: flex;
+    padding: 30px 300px;
+}
+
+.main-sec .image, .content {
+    width: 60%;
+    /* border: 1px solid red; */
+    height: inherit;
+    margin: 0 10px;
+}
+
+.main-sec .content {
+    height: 65vh;
+    padding: 10px;
+    
+}
+
+.main-sec .content .skills {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #D8D8D8;
+}
+
+.main-sec .content h4 {
+    color: #D8D8D8;
+    font-size: 2em;
+    font-weight: normal;
+}
+
+.main-sec .content h4 span {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #fff;
+}
+
+.main-sec .content .para {
+    font-size: 1.4em;
+    width: 75%;
+    color: #D8D8D8;
+    word-spacing: 5px;
+    margin-top: 10px;
+}
+
+.main-sec .image {
+    width: 35%;
+    height: 60vh;
+}
+
+.main-sec .image img {
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: inherit;
+    border-radius: 5px;
+    
+}
+
+.main-sec .icons {
+    display: flex;
+    margin-top: 15px;
+}
+
+.main-sec .social {
+    margin:  0 10px;
+    
+}
+
+.main-sec .project {
+    display: flex;
+    margin-top: 20px;
+    
+}
+
+.main-sec .project a {
+    text-decoration: none;
+}
+.main-sec .project p {
+    color: #F2994A;
+    margin: 0 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 800px) {
+    .navigate {
+        border:  1px solid red;
+        padding: 0;
+        width: 100%;
+    }
+
+    .navigate p:first-child {
+        margin-left: 30px;
+        font-size: 1.5em;
+        margin-top: 50px;
+    }
+
+    .navigate p:last-child {
+        position: relative;
+        right: 50px;
+        top: 50px;
+    }
+
+    .main-sec {
+        flex-direction: column;
+        padding: 0;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .main-sec .image {
+        width: 90%;
+        padding-right: 10px;
+    }
+
+    .main-sec .content {
+        border:  1px solid red;
+        width: 90%;
+        height: 100vh;
+    }
+
+    .main-sec .content .skills {
+        border: 1px solid red;
+        font-size: 1em;
+        
+    }
+
+    .main-sec .content h4 {
+        font-size: 1.5em;
+    }
+
+    .main-sec .content h4 span {
+        font-size: 1.2em;
+    }
+
+    .main-sec .content .para {
+        font-size: 1.1em;
+        width: 90%;
+    }
+}
+
+
