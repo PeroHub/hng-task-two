@@ -58,8 +58,9 @@ body {
 }
 
 .main-sec .content {
-    height: 65vh;
+    height: 55vh;
     padding: 10px;
+    border: 1px solid red;
     
 }
 
@@ -136,7 +137,6 @@ body {
 
 @media screen and (max-width: 800px) {
     .navigate {
-        border:  1px solid red;
         padding: 0;
         width: 100%;
     }
@@ -166,13 +166,13 @@ body {
     }
 
     .main-sec .content {
-        border:  1px solid red;
+        
         width: 90%;
         height: 100vh;
     }
 
     .main-sec .content .skills {
-        border: 1px solid red;
+        
         font-size: 1em;
         
     }
