@@ -43,11 +43,12 @@ body {
 
 
 .main-sec {
-    min-height: 79vh;
+    height: 65vh;
     /* border: 1px solid red; */
     padding: 30px 120px;
     display: flex;
     padding: 30px 300px;
+    
 }
 
 .main-sec .image, .content {
