@@ -150,9 +150,9 @@ main {
 @media screen and (max-width: 768px) {
     main {
         width: 100%;
-        padding: 0;
+        padding: 15px;
         height: 220vh;
-        /* overflow-y: hidden; */
+        overflow-x: hidden;
     }
 
     header {

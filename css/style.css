@@ -21,6 +21,7 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 30px 300px;
+    margin-top: 20px;
 }
 
 .navigate p:first-child{
@@ -40,11 +41,17 @@ body {
     cursor: pointer;
 }
 
-
+.navigate p:last-child:hover {
+    background: black;
+    color: #F2994A;
+    border: 1px solid #F2994A;
+    transition: color 2s ease-out;
+    transition: background 2s ease-out;
+    
+}
 
 .main-sec {
-    height: 65vh;
-    /* border: 1px solid red; */
+    height: 500px;
     padding: 30px 120px;
     display: flex;
     padding: 30px 300px;
@@ -59,15 +66,42 @@ body {
 }
 
 .main-sec .content {
-    height: 55vh;
+    height: 60vh;
     padding: 10px;
-    
-    
+
+}
+
+
+.type {
+    color: #fff;
+    font-family: monospace;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+        typing 6.5s steps(30, end),
+        blink-caret .5s step-end infinite;
+    }
+
+    /* The typing effect */
+    @keyframes typing {
+    from { width: 0 }
+    to { width: 30% }
+    }
+
+    /* The typewriter cursor effect */
+    @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+    }
 }
 
 .main-sec .content .skills {
     text-transform: uppercase;
-    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 40px;
     font-size: 1.1em;
     font-weight: bold;
     color: #D8D8D8;
@@ -75,18 +109,19 @@ body {
 
 .main-sec .content h4 {
     color: #D8D8D8;
-    font-size: 2em;
+    font-size: 1.3em;
     font-weight: normal;
+    margin-top: 10px;
 }
 
 .main-sec .content h4 span {
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-weight: bold;
     color: #fff;
 }
 
 .main-sec .content .para {
-    font-size: 1.4em;
+    font-size: 1em;
     width: 75%;
     color: #D8D8D8;
     word-spacing: 5px;
@@ -111,10 +146,16 @@ body {
 .main-sec .icons {
     display: flex;
     margin-top: 15px;
+    height: 7vh;
+}
+
+.main-sec .content .icons > p {
+    color: #F2994A;
+    font-size: 1.2em;
 }
 
 .main-sec .social {
-    margin:  0 10px;
+    margin:  10px 10px;
     
 }
 
@@ -131,16 +172,40 @@ body {
 .main-sec .project p {
     color: #F2994A;
     margin: 0 5px;
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: bold;
     cursor: pointer;
+    border: 1px solid #F2994A;
+    padding: 10px;
 }
 
 
+
+
 @media screen and (max-width: 800px) {
+
+    body {
+        overflow-x: hidden;
+    }
+    .main-sec .image {
+        height: 450px;
+    }
+
     .navigate {
         padding: 0;
         width: 100%;
+        flex-direction: column-reverse;
+        margin-bottom: 50px;
+    }
+
+    .navigate .resize {
+        font-size: 1.5em;
+    }
+
+    .navigate .menu {
+        width: 100px;
+        position: relative;
+        left: 10%;
     }
     
     .main-sec .project p {
@@ -151,8 +216,6 @@ body {
         font-size: 1em;
         
     }
-
-    
 
     .main-sec .project {
         
@@ -176,6 +239,7 @@ body {
         padding: 0;
         width: 100%;
         padding: 10px;
+        height: 120vh;
         
     }
 
@@ -186,27 +250,55 @@ body {
 
     .main-sec .content {
         
-        width: 90%;
+        width: 100%;
         height: 100vh;
     }
 
     .main-sec .content .skills {
-        
-        font-size: 1em;
+        margin-top: 15px;
+        font-size: 1.3em;
         
     }
 
     .main-sec .content h4 {
-        font-size: 1.5em;
+        font-size: 1.3em;
     }
 
     .main-sec .content h4 span {
-        font-size: 1.2em;
+        font-size: 1em;
     }
 
     .main-sec .content .para {
         font-size: 1.1em;
         width: 105%;
+    }
+
+    .main-sec .content .icons {
+        margin-top: 30px;
+    }
+
+    .main-sec .content .icons .social svg {
+        font-size: 2em;
+        
+    }
+
+    .main-sec .content .project {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+    }
+
+    .main-sec .content .project p {
+        border: 1px solid #F2994A;
+        padding: 10px;
+        width: 35%;
+    }
+
+    .main-sec .content .project a p {
+        border: 1px solid #F2994A;
+        padding: 10px;
+        width:100%;
     }
 }
 
