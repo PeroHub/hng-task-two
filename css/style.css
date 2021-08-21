@@ -65,6 +65,7 @@ body {
     margin: 0 10px;
 }
 
+
 .main-sec .content {
     height: 60vh;
     padding: 10px;
@@ -88,7 +89,7 @@ body {
     /* The typing effect */
     @keyframes typing {
     from { width: 0 }
-    to { width: 30% }
+    to { width: 40% }
     }
 
     /* The typewriter cursor effect */
@@ -180,8 +181,22 @@ body {
 }
 
 
+/* popup */
 
+.Animapop {
+    color: #F2994A;
+    font-size: 1.5em;
+    position: relative;
+    top: -20px;
+    margin-left: 40px;
+    animation: pulse 2s ease-out;
+}
 
+@keyframes pulse {
+    0% {opacity: 0;}
+    100%{opacity: 1;}
+}
+/* popup */
 @media screen and (max-width: 800px) {
 
     body {
@@ -240,17 +255,18 @@ body {
         width: 100%;
         padding: 10px;
         height: 120vh;
+        overflow-x: hidden;
         
     }
 
     .main-sec .image {
-        width: 90%;
-        padding-right: 10px;
+        width: 100%;
+        /* padding-right: 10px; */
     }
 
     .main-sec .content {
         
-        width: 100%;
+        width: 90%;
         height: 100vh;
     }
 
@@ -302,4 +318,36 @@ body {
     }
 }
 
+
+@media screen and (max-width: 376px) {
+    .main-sec .image {
+        height: 300px;
+        
+    }
+
+    .main-sec .content .project {
+        width: 100%;
+        flex-direction: column;
+        padding: 20px 10px;
+    }
+
+    .main-sec .content .project p {
+        border: 1px solid #F2994A;
+        /* padding: 10px; */
+        width: 100%;
+        margin-left: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .main-sec .content .project a {
+        margin-top: 10px;
+        width: 105%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
 
