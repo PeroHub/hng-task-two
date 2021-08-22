@@ -25,20 +25,20 @@ const final = logout(nameObject.fName, nameObject.lname)
 
 // Popup message
 
-// let viewPop = document.getElementById("viewpro")
-// let mainCon = document.querySelector(".demo")
-// let pop = document.createElement("p");
+let viewPop = document.querySelector(".menu")
+let mainCon = document.querySelector(".viewpro")
+let pop = document.createElement("p");
 
-// viewPop.addEventListener('click', (e) => {
+viewPop.addEventListener('click', (e) => {
     
-//     pop.textContent = "Lots of amazing project is coming soon......";
-//     pop.classList.add("Animapop")
-//     mainCon.append(pop)
+    pop.textContent = "Toogle is coming shortly, stay put for now......";
+    pop.classList.add("Animapop")
+    mainCon.append(pop)
 
-//     setTimeout(() => {
-//         pop.textContent = ""
-//     },4000)
+    setTimeout(() => {
+        pop.textContent = ""
+    },4000)
     
     
-// })
+})
 

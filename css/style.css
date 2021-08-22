@@ -327,6 +327,10 @@ body {
         
     }
 
+    .Animapop {
+        margin-top: 40px;
+    }
+
     .main-sec .content .project {
         width: 100%;
         flex-direction: column;
