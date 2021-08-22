@@ -17,6 +17,9 @@ const nameObject =  {
 
 const final = logout(nameObject.fName, nameObject.lname)
 
+
+
+
 // console.log(final)
 
 
