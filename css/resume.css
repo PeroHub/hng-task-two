@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-header {
+/* header {
     text-align: center;
     padding: 10px;
     display: flex;
@@ -33,13 +33,13 @@ header .ingressive {
 header .zuri {
     width: 80px;
     height: 80px;
-}
+} */
 
 main {
     border:  1px solid rgb(211, 209, 209);
     width: 65%;
     padding: 50px;
-    height: 150vh;
+    min-height: 150vh;
     position: relative;
     top: 30px;
     margin:  0 auto;
@@ -83,7 +83,7 @@ main {
 
 .internship p {
     margin-top: 10px;
-    font-size: 1.1em;
+    
 }
 
 .certification {
@@ -99,7 +99,7 @@ main {
 
 .certification span {
     /* border: 1px solid red; */
-    font-size: 1.1em;
+   
 }
 
 .certification span:last-child {
@@ -120,13 +120,13 @@ main {
 
 .volunteer p {
     margin-top: 10px;
-    font-size: 1.1em;
+    
 }
 
 .volunteer ul {
     padding-left: 50px;
     margin-top: 10px;
-    font-size: 1.1em;
+  
 }
 
 .skills {
@@ -139,7 +139,7 @@ main {
     justify-content: space-between;
     margin-top: 10px;
     /* border:  1px solid red; */
-    font-size: 1.1em;
+   
 }
 
 .box .score i {

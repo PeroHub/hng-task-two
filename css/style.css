@@ -7,6 +7,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+header {
+    margin-top: 100px;
+}
+
 body {
     background-color: #000;
     color: #fff;
@@ -58,7 +62,7 @@ body {
     
 }
 
-.main-sec .image, .content {
+.main-sec  .content {
     width: 60%;
     /* border: 1px solid red; */
     height: inherit;
@@ -203,7 +207,7 @@ body {
         overflow-x: hidden;
     }
     .main-sec .image {
-        height: 450px;
+        height: 250px;
     }
 
     .navigate {
@@ -322,8 +326,12 @@ body {
 
 
 @media screen and (max-width: 376px) {
+    .main-sec  {
+        padding: 10px;
+    }
     .main-sec .image {
         height: 300px;
+        width: 100%;
         
     }
 
