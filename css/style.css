@@ -7,6 +7,13 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
+  align-items: center;    
+} 
+
 header {
     margin-top: 100px;
 }
@@ -15,8 +22,27 @@ body {
     background-color: #000;
     color: #fff;
     height: 100vh;
-    width: 100vw;
     
+}
+
+.sub-container {;
+    padding: 10px;
+    
+}
+
+.sub-container .image {
+    width: 100%;
+    
+}
+
+
+.sub-container .image img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: inherit;
+    height: inherit;
+    border-radius: 5px;
 }
 
 .navigate {
@@ -54,27 +80,6 @@ body {
     
 }
 
-.main-sec {
-    height: 500px;
-    padding: 30px 120px;
-    display: flex;
-    padding: 30px 300px;
-    
-}
-
-.main-sec  .content {
-    width: 60%;
-    /* border: 1px solid red; */
-    height: inherit;
-    margin: 0 10px;
-}
-
-
-.main-sec .content {
-    height: 60vh;
-    padding: 10px;
-
-}
 
 
 .type {
@@ -101,22 +106,25 @@ body {
     from, to { border-color: transparent }
     50% { border-color: orange }
     }
-}
 
-.main-sec .content .skills {
-    text-transform: uppercase;
-    margin-top: 20px;
-    margin-bottom: 40px;
-    font-size: 1.1em;
-    font-weight: bold;
-    color: #D8D8D8;
-}
+    .content {
+        margin-top: 20px;
+        
+    }
 
-.main-sec .content h4 {
+.content h4 {
     color: #D8D8D8;
     font-size: 1.3em;
     font-weight: normal;
     margin-top: 10px;
+}
+
+.content .skills {
+   margin-top: 5px;
+}
+
+.content span {
+    font-size: 1.3em;
 }
 
 .main-sec .content h4 span {
@@ -133,45 +141,35 @@ body {
     margin-top: 10px;
 }
 
-.main-sec .image {
-    width: 35%;
-    height: 60vh;
-}
 
-.main-sec .image img {
-    width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: inherit;
-    border-radius: 5px;
-    
-}
 
-.main-sec .icons {
+
+
+.icons {
     display: flex;
+    justify-content: space-evenly;
     margin-top: 15px;
     height: 7vh;
+    width: 100%;
 }
 
-.main-sec .content .icons > p {
-    color: #F2994A;
-    font-size: 1.2em;
-}
 
-.main-sec .social {
-    margin:  10px 10px;
-    
-}
 
-.main-sec .project {
+
+
+.project {
     display: flex;
-    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
     
 }
 
-.main-sec .project a {
+.project a {
     text-decoration: none;
+    margin: 10px;
+    color: #F2994A;
+    border: 1px solid #F2994A;
+    padding: 10px;
     
 }
 .main-sec .project p {
@@ -201,167 +199,53 @@ body {
     100%{opacity: 1;}
 }
 /* popup */
-@media screen and (max-width: 800px) {
 
-    body {
-        overflow-x: hidden;
-    }
-    .main-sec .image {
-        height: 250px;
-    }
-
-    .navigate {
-        padding: 0;
-        width: 100%;
-        flex-direction: column-reverse;
-        margin-bottom: 10px;
-    }
-
-    .navigate .resize {
-        font-size: 1.5em;
-    }
-
-    .navigate .menu {
-        width: 100px;
-        position: relative;
-        left: 10%;
-    }
+@media screen and (min-width: 700px) {
     
-    .main-sec .project p {
-        width: 50%;
-    }
-    .main-sec .project a {
-        margin: 0 50px;
-        font-size: 1em;
-        
-    }
-
-    .main-sec .project {
-        
+    .sub-container {
+        display: flex;
+        justify-content: center;
         width: 100%;
+        align-items: center;
     }
 
-    .navigate p:first-child {
+    
+
+    .content {
         margin-left: 30px;
-        font-size: 1.5em;
-        margin-top: 50px;
     }
 
-    .navigate p:last-child {
-        position: relative;
-        right: 50px;
-        top: 50px;
+    .sub-container .image {
+        width: 350px;
+        height: 350px;
     }
 
-    .main-sec {
-        flex-direction: column;
-        padding: 0;
-        width: 100%;
-        
-        height: 120vh;
-        overflow-x: hidden;
-        margin-top: px;
-        
+    .sub-container .image img {
+        width: inherit;
+        height: inherit;
     }
 
-    .main-sec .image {
-        width: 100%;
-        /* padding-right: 10px; */
-        
-    }
-
-    .main-sec .content {
-        
-        width: 90%;
-        height: 100vh;
-    }
-
-    .main-sec .content .skills {
-        margin-top: 15px;
-        font-size: 1.3em;
-        
-    }
-
-    .main-sec .content h4 {
-        font-size: 1.3em;
-    }
-
-    .main-sec .content h4 span {
-        font-size: 1em;
-    }
-
-    .main-sec .content .para {
-        font-size: 1.1em;
-        width: 105%;
-    }
-
-    .main-sec .content .icons {
+    .icons {
+        justify-content: flex-start;
+        width: 80%;
         margin-top: 30px;
     }
 
-    .main-sec .content .icons .social svg {
-        font-size: 2em;
-        
+    .icons .social {
+        margin: 15px;
     }
 
-    .main-sec .content .project {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 40px;
-    }
-
-    .main-sec .content .project p {
-        border: 1px solid #F2994A;
-        padding: 10px;
-        width: 35%;
-    }
-
-    .main-sec .content .project a p {
-        border: 1px solid #F2994A;
-        padding: 10px;
-        width:100%;
+    .project {
+        justify-content: flex-start;
+        width: 80%;
+        margin-top: 30px;
     }
 }
 
-
-@media screen and (max-width: 376px) {
-    .main-sec  {
-        padding: 10px;
+@media screen and (min-width: 800px) {
+    .sub-container {
+        width: 85%;
+ 
     }
-    .main-sec .image {
-        height: 300px;
-        width: 100%;
-        
-    }
-
-    .Animapop {
-        margin-top: 40px;
-    }
-
-    .main-sec .content .project {
-        width: 100%;
-        flex-direction: column;
-        padding: 20px 10px;
-    }
-
-    .main-sec .content .project p {
-        border: 1px solid #F2994A;
-        /* padding: 10px; */
-        width: 100%;
-        margin-left: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 10px;
-    }
-
-    .main-sec .content .project a {
-        margin-top: 10px;
-        width: 105%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+    
 }
-
