@@ -19,15 +19,52 @@ header {
 }
 
 body {
-    background-color: #000;
+    background-color: #1f2937;
     color: #fff;
     height: 100vh;
     
 }
 
-.sub-container {;
+.sub-container {
     padding: 10px;
     
+}
+
+.container a {
+    text-decoration: none;
+    color: #fff;
+    width: 100%;
+}
+
+.articleText, .container {
+    padding: 10px;
+
+}
+
+.articleText p {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.articleCon {
+    background-color: #6b21a8;
+    margin-top: 20px;
+    min-height: 200px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container .articleCon p:first-child {
+    font-size: 14px;
+}
+
+
+
+.container .articleCon p:last-child{
+    font-size: 1.2rem;
 }
 
 .sub-container .image {
@@ -225,8 +262,12 @@ body {
         height: inherit;
     }
 
+    .article {
+        width: 100%;
+    }
+
     .icons {
-        justify-content: flex-start;
+        justify-content: center;
         width: 80%;
         margin-top: 30px;
     }
@@ -236,16 +277,32 @@ body {
     }
 
     .project {
-        justify-content: flex-start;
+        justify-content: center;
         width: 80%;
-        margin-top: 30px;
+        margin-top: 10px;
     }
 }
 
 @media screen and (min-width: 800px) {
     .sub-container {
         width: 85%;
- 
+    }
+
+    .article {
+        width: 85%;
+    }
+
+    .container {
+        display: flex;
+    }
+
+    .articleCon {
+        width: 100%;
+        margin: 0px 5px;
+    }
+
+    .container a  {
+        margin: 0px 5px;
     }
     
 }
