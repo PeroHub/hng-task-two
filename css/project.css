@@ -10,7 +10,8 @@
 }
 
 main {
-    height: 100vh;
+    height: 140vh;
+    
 }
 
 main h3 {
@@ -101,6 +102,16 @@ main h3 span {
 
     .buttom {
         margin-top: 0;
+    }
+
+    .view {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .view a {
+        margin-top: -5px;
     }
   }
 
