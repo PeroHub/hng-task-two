@@ -42,8 +42,19 @@ main h3 span {
 }
 
 .project-card .card-image img {
-    height: 100%;
+    height: 200px;
     width: inherit;
+}
+
+.marginBtn {
+    margin-top: 10px;
+}
+
+@media screen and (min-width: 400px) {
+    .project-card .card-image img {
+        height: 200px;
+        width: 100%;
+    }
 }
 
 .project-card .card-content h4 {
@@ -83,6 +94,8 @@ main h3 span {
 }
 
 
+
+
 @media only screen and (min-width: 900px) {
     .grid {
         display: grid;
@@ -96,12 +109,15 @@ main h3 span {
         
     }
 
+    
+
     .project-card .card-content .check {
         width: 100%;
     }
 
     .buttom {
         margin-top: 0;
+       
     }
 
     .view {
@@ -112,6 +128,10 @@ main h3 span {
 
     .view a {
         margin-top: -5px;
+    }
+
+    .marginBtn {
+        margin-top: 0px;
     }
   }
 
