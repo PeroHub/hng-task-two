@@ -50,6 +50,10 @@ main h3 span {
     margin-top: 10px;
 }
 
+/* .view a {
+    border:  1px solid orange;
+} */
+
 @media screen and (min-width: 400px) {
     .project-card .card-image img {
         height: 200px;
