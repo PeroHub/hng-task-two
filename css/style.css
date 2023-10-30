@@ -192,8 +192,6 @@ body {
 
 
 
-
-
 .project {
     display: flex;
     justify-content: center;
@@ -204,8 +202,8 @@ body {
 .project a {
     text-decoration: none;
     margin: 10px;
-    color: #F2994A;
-    border: 1px solid #F2994A;
+    color: #fff;
+    border: 1px solid #fff;
     padding: 10px;
     
 }

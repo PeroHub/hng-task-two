@@ -104,7 +104,6 @@ main h3 span {
     .grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-       
         gap: 10px;
         padding: 1em;
         min-height: 500px;
